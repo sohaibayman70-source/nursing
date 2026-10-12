@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="ar">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>دليل تمريض الأطفال | Pediatric Nursing Guide</title>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;600;800&display=swap">
+<style>
+:root{--bg:#eef5f6;--card:#fff;--ink:#12262b;--mute:#52696e;--teal:#0e6b72;--soft:#d6ebed;--amber:#e3a21a;--line:#cfe0e2;box-sizing:border-box;padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px)}
+@media (prefers-color-scheme:dark){:root:not([data-theme="light"]){--bg:#0d1a1d;--card:#142529;--ink:#e6f1f2;--mute:#9bb3b7;--teal:#5cc3cb;--soft:#1c3a3f;--line:#26454a}}
+:root[data-theme="dark"]{--bg:#0d1a1d;--card:#142529;--ink:#e6f1f2;--mute:#9bb3b7;--teal:#5cc3cb;--soft:#1c3a3f;--line:#26454a}
+*{box-sizing:border-box}
+html{scroll-padding-top:calc(env(safe-area-inset-top,0px) + 70px)}
+body{margin:0;background:var(--bg);color:var(--ink);font-family:Cairo,"Segoe UI",Tahoma,sans-serif;line-height:1.7}
+header{padding:28px 18px 10px;max-width:760px;margin:auto}
+h1{margin:0;font-size:1.7rem;font-weight:800;line-height:1.3}
+header p{margin:6px 0 0;color:var(--mute)}
+nav{position:sticky;top:env(safe-area-inset-top,0px);z-index:5;background:var(--bg);border-bottom:1px solid var(--line)}
+nav div{max-width:760px;margin:auto;display:flex;gap:6px;overflow-x:auto;padding:8px 14px}
+nav button{flex:none;font:inherit;font-weight:600;border:1px solid var(--line);background:var(--card);color:var(--ink);border-radius:20px;padding:6px 14px;cursor:pointer}
+nav button[aria-selected=true]{background:var(--teal);color:#fff;border-color:var(--teal)}
+nav button:focus-visible,input:focus-visible{outline:3px solid var(--amber);outline-offset:2px}
+main{max-width:760px;margin:auto;padding:14px 14px 50px}
+.note{background:var(--soft);border-radius:10px;padding:10px 14px;margin-bottom:14px;font-size:.92rem}
+.card{background:var(--card);border:1px solid var(--line);border-radius:14px;padding:16px 16px 8px;margin-bottom:16px}
+.card h2{margin:0 0 10px;font-size:1.15rem;font-weight:800;color:var(--teal);display:flex;justify-content:space-between;gap:10px;flex-wrap:wrap}
+ol{margin:0;padding:0;list-style:none;counter-reset:s}
+li{counter-increment:s;padding:9px 0 9px 40px;border-top:1px solid var(--line);position:relative}
+li::before{content:counter(s);position:absolute;left:0;top:11px;width:26px;height:26px;border-radius:50%;background:var(--soft);color:var(--teal);font-size:.8rem;font-weight:700;display:grid;place-items:center}
+li.c::before{background:var(--amber);color:#2a1c00}
+li .e{display:block;font-weight:600}
+li .a{display:block;color:var(--mute);direction:rtl;text-align:right}
+li.c .e::after{content:" ★";color:var(--amber)}
+.sub{font-weight:800;margin:14px 0 4px;color:var(--mute);font-size:.95rem}
+input{width:100%;font:inherit;padding:10px 14px;border-radius:12px;border:1px solid var(--line);background:var(--card);color:var(--ink);margin-bottom:12px}
+.g{display:grid;grid-template-columns:1.1fr 1.2fr 1.2fr;gap:8px;padding:10px 12px;border-bottom:1px solid var(--line);align-items:baseline}
+.g b{color:var(--teal);direction:ltr}
+.g .p{color:var(--amber);font-weight:600}
+.gh{font-weight:800;color:var(--mute);font-size:.85rem}
+.gl{background:var(--card);border:1px solid var(--line);border-radius:14px;overflow:hidden}
+@media(max-width:520px){.g{grid-template-columns:1fr;gap:0}}
+</style>
+</head>
+<body>
+<header>
+<h1>Pediatric Nursing Guide<br>دليل تمريض الأطفال</h1>
+<p>Growth measurements · IV therapy · Oxygen therapy · Glossary</p>
+</header>
+<nav><div id="tabs" role="tablist"></div></nav>
+<main id="m"></main>
+<script>
+var T=[["growth","Growth | النمو"],["iv","IV | وريدي"],["o2","Oxygen | أكسجين"],["gl","Words | كلمات"]];
+var D={
+growth:[
+["Every measurement","كل قياس",[["Wash hands, prepare equipment, explain to child and parents","اغسل إيديك، جهّز الأدوات، اشرح للطفل والأهل"],["After: clean equipment, wash hands, record the result","بعد القياس: نضّف الأدوات، اغسل إيديك، سجّل النتيجة"]]],
+["Infant weight","وزن الرضيع",[["Scale flat on a firm surface, wiped with alcohol, paper on it","الميزان أفقي على سطح ثابت، ممسوح بالكحول وعليه ورقة"],["Set to zero, pointer exactly centered","اظبط على الصفر والمؤشر في النص بالظبط",1],["Close windows and doors, remove the clothes","اقفل الشبابيك والأبواب وشيل الهدوم"],["Lay infant in the basket, one hand over the body","حط الرضيع في السلة وإيدك فوق جسمه للأمان"],["Balance the weights with the right hand","اظبط الأثقال بإيدك اليمين لحد التوازن",1],["Read while infant lies still, return him to bed, discard paper","اقرأ والطفل ساكن، رجّعه سريره، وارمي الورقة"]]],
+["Recumbent length (infants)","الطول وهو نايم",[["Towel on board, remove clothes, infant supine in the center","فوطة على اللوح، شيل الهدوم، الرضيع على ضهره في النص"],["Assistant holds the head firmly against the board","مساعد يثبّت الراس على طرف اللوح"],["Grasp the knees gently together","امسك الركبتين مع بعض بلطف",1],["Push knees down until legs fully extended, hold firmly","اضغط الركبتين لحد ما الرجلين تتفردوا وثبّتهم",1],["Footboard firmly against the heels, read and record","قرّب اللوح من الكعبين بإحكام، اقرأ وسجّل"],["No board? Mark head top and heel with a pen, remove child, measure between marks","مفيش لوح؟ علّم بالقلم على الراس والكعب، شيل الطفل، وقس بين العلامتين"]]],
+["Height (over 2 years)","الطول (أكبر من سنتين)",[["Remove shoes and socks","اخلع الجزمة والشراب"],["Stand tall and straight, head midline, eyes parallel to floor","وقفة مفرودة، الراس في النص والنظر موازي للأرض",1],["Fix bent knees, slumped shoulders, raised heels","صحّح ثني الركب وانحناء الكتف ورفع الكعب"],["Back against the wall; rod rests firmly on the crown","الضهر على الحيطة والعمود المتحرك على قمة الراس"],["Read to the nearest centimeter. No scale: tape on wall and a book on the head at a right angle","اقرأ لأقرب سم. من غير ميزان: شريط على الحيطة وكتاب فوق الراس بزاوية قائمة"]]],
+["Head circumference","محيط الراس",[["Tape over forehead above eyebrows and ears, around the occipital prominence","الشريط فوق الحواجب والودان وحوالين نتوء مؤخرة الجمجمة",1],["Read and record","اقرأ وسجّل"]]],
+["Chest circumference","محيط الصدر",[["Remove upper clothing; infant lying down, child standing","شيل الهدوم العلوية؛ الرضيع نايم والطفل واقف"],["Tape across the nipple line","الشريط على خط الحلمات"],["Measure in inhalation and expiration, record the average","قس في الشهيق والزفير وسجّل المتوسط"]]],
+["Arm circumference","محيط الذراع",[["Right arm bent 90° at the elbow","الذراع اليمين مثنية 90 درجة",1],["Mark midpoint between acromion and olecranon on the back of the arm","علّم منتصف المسافة بين الكتف والكوع من ورا",1],["Wrap tape at the midpoint, nearest 1 cm, read and record","لف الشريط عند العلامة، أقرب 1 سم، اقرأ وسجّل"]]]
+],
+iv:[
+["Purpose","الهدف",[["Give fluids, electrolytes, nutrition, blood products, medication","إعطاء سوائل وأملاح وتغذية ومشتقات دم وأدوية"],["Keep fluid balance; replace losses in bleeding, burns, dehydration","الحفاظ على توازن السوائل وتعويض النزيف والحروق والجفاف"]]],
+["Getting ready","التجهيز",[["Check prescription: child name, room/bed, fluid type and amount, expiry, start and end time, doctor signature","راجع الأمر الطبي: الاسم، الغرفة والسرير، نوع وكمية المحلول، الصلاحية، وقت البداية والنهاية، توقيع الدكتور"],["Check fluid for cloudiness or sediment","اتأكد إن المحلول مش عكر ومفيهوش رواسب"],["Hang bottle, fill drip chamber one-third to half","علّق الزجاجة وامل غرفة النقط من الثلث للنص"],["Run solution through tubing to remove air","دّي المحلول في الخرطوم عشان يطلع الهواء",1],["Never touch the needle adaptor; label the bottle","ماتلمسش وصلة الإبرة، واكتب البيانات على الزجاجة"]]],
+["During the procedure","أثناء الإجراء",[["Explain to child and mother; choose a vein; restrain if needed","اشرح للطفل وأمه، اختار الوريد، وثبّت الطفل لو لزم"],["Tighten tourniquet above the vein","اربط الرباط الضاغط فوق الوريد",1],["Clean site, insert needle, check blood return","نضّف المكان وادخل الإبرة وتأكد من رجوع الدم"],["Remove tourniquet","شيل الرباط الضاغط",1],["Connect to infusion set and regulate the rate","وصّل الطقم واظبط معدل النزول",1],["Record total amount and rate; dispose of supplies; wash hands","سجّل الكمية والمعدل، ارمي الأدوات، اغسل إيديك"]]],
+["Care while running","الرعاية أثناء المحلول",[["Check site hourly: color, swelling, leaking, sponginess","افحص المكان كل ساعة: اللون، الورم، التسريب، الإسفنجية"],["Keep intake/output record; weigh on the same scale (5% change matters)","سجّل الداخل والخارج وزن على نفس الميزان (تغير 5% مهم)"],["Change container and tubing every 24 h","غيّر الزجاجة والخرطوم كل 24 ساعة"],["Report: fever, sunken or bulging fontanelle, poor skin turgor, lethargy, sudden vital sign change","بلّغ عن: حرارة، يافوخ غاير أو بارز، قلة مرونة الجلد، خمول، تغير مفاجئ في العلامات الحيوية"],["Infiltration: remove IV, apply heat (per source), restart elsewhere","تسرب المحلول: شيل الكانيولا وحط حرارة (حسب المصدر) وابدأ في مكان تاني"]]],
+["Irrigating the line","غسيل الخط",[["Prepare 1–3 ml normal saline syringe; clamp off; disconnect tubing keeping it sterile","جهّز سرنجة 1–3 مل ملح، اقفل المشبك، افصل الخرطوم وحافظ على تعقيمه"],["Aspirate first, then slowly inject saline","اسحب الأول وبعدين احقن الملح ببطء",1],["Reconnect, unclamp, regulate flow, wash hands","وصّل تاني، افتح المشبك، اظبط النزول، اغسل إيديك"]]]
+],
+o2:[
+["Why and when","ليه وإمتى",[["Relieve hypoxia from respiratory or cardiac emergency; reduce work of breathing","علاج نقص الأكسجين في طوارئ التنفس أو القلب وتقليل مجهود التنفس"],["Normal SpO2 is 95–100%. Below 90%, start oxygen","التشبع الطبيعي 95–100%. أقل من 90% نبدأ أكسجين",1],["Signs: restlessness, fast pulse, fast breathing, confusion, difficulty breathing, cyanosis","العلامات: قلق، نبض سريع، تنفس سريع، تشوش، صعوبة تنفس، زرقان"]]],
+["Safety rules","قواعد الأمان",[["Keep fire and flammable material away: oxygen supports combustion","ابعد النار والمواد القابلة للاشتعال لأن الأكسجين بيساعد على الاحتراق",1],["No oil, grease, alcohol or smoking near oxygen","ممنوع زيت أو شحم أو كحول أو تدخين"],["Avoid wool or synthetic blankets and electrical devices (sparks)","تجنب البطاطين الصوف والصناعية والأجهزة الكهربائية (شرارة)"]]],
+["For any method","لأي طريقة",[["Explain to child or parents; suction to keep airway open","اشرح للطفل أو الأهل، واشفط عشان المجرى يفضل مفتوح"],["Humidify and warm oxygen (31–34°C) to avoid cold stress","رطّب وسخّن الأكسجين (31–34°) عشان مايحصلش إجهاد برد",1],["Keep concentration as low as possible (retrolental fibroplasia). Normal PaO2 75–100 mmHg","خلي التركيز أقل ما يمكن (اعتلال الشبكية). PaO2 الطبيعي 75–100"],["Clean equipment daily; change weekly; tubing and nebulizer jar daily","نضّف الأدوات يوميا وغيّرها أسبوعيا؛ الخرطوم وجرة النيبولايزر يوميا"],["Wean slowly; watch for restlessness, fast pulse, distress, cyanosis","قلّل تدريجيا وراقب القلق وسرعة النبض وضيق التنفس والزرقان"]]],
+["Face mask","قناع الوجه",[["Size covers mouth and nose, not eyes; cotton above the ears","مقاس يغطي الفم والأنف مش العينين، وقطن فوق الودان"],["Not for an unconscious patient (aspiration risk)","مش للمريض فاقد الوعي (خطر الاستنشاق)",1],["Connect tubing and flowmeter, set flow, place mask from the nose down, elastic around head, snug seal, skin care","وصّل الخرطوم والفلوميتر، اظبط التدفق، حط القناع من الأنف لتحت، الرباط حوالين الراس، إحكام، واعتني بالجلد"]]],
+["Nasal cannula and hood","كانيولا الأنف والهود",[["Set flow, prongs into nares, tubing behind ears, down under the chin, slide to secure","اظبط التدفق، الشوكتين في المنخارين، الخرطوم ورا الودان وتحت الدقن وثبّته بالمنزلق"],["Pad with cotton; nostril skin care every 4 h","حط قطن واعتني بجلد المنخارين كل 4 ساعات"],["Hood: warmed humidified oxygen through a plastic container over the head","الهود: أكسجين دافي ومرطب في حاوية بلاستيك فوق الراس"]]]
+]};
+var W=[["Hypoxia","نقص الأكسجين","هاي-بُوك-سيا"],["Cyanosis","زرقان","ساي-يا-نُو-سِس"],["Tachycardia","سرعة ضربات القلب","تاكي-كار-ديا"],["Tachypnea","سرعة التنفس","تاكيب-نيا"],["Anoxia","انعدام الأكسجين","أن-أُوك-سيا"],["Humidifier","مرطّب","هيو-ميد-ي-فايِر"],["Flowmeter","مقياس التدفق","فلُو-ميتر"],["Nebulizer","جهاز البخار","نِب-يو-لايزر"],["Cannula","كانيولا","كان-يو-لا"],["Nares","فتحتا الأنف","نيريز"],["Combustion","احتراق","كم-باس-تشن"],["Comatose","فاقد الوعي","كو-ما-توس"],["Aspiration","استنشاق القيء","أسبي-ري-شن"],["Vomitus","القيء","فُوم-ي-تس"],["Mucous membrane","غشاء مخاطي","ميو-كس مِم-برين"],["Myocardial","خاص بعضلة القلب","مايو-كار-ديال"],["Metabolic acidosis","حموضة أيضية","ميتا-بُول-ك أسي-دُو-سِس"],["Glycogen","مخزون السكر","جلاي-كو-جِن"],["Retrolental fibroplasia","اعتلال الشبكية","ريترو-لِن-تل فايبرو-بلي-جيا"],["Weaning","تقليل تدريجي","وي-نينج"],["Intravenous","وريدي","إنترا-في-نَس"],["Tourniquet","رباط ضاغط","تُور-ني-كِت"],["Infiltration","تسرب المحلول","إنفل-تري-شن"],["Aspirate","يسحب بالسرنجة","أس-بي-ريت"],["Irrigation","غسيل الخط","إري-جي-شن"],["Saline","محلول ملحي","سي-لاين"],["Electrolytes","أملاح الجسم","إي-ليك-ترو-لايتس"],["Hemorrhage","نزيف","هِم-ريج"],["Dehydration","جفاف","دي-هاي-دري-شن"],["Fontanelle","اليافوخ","فون-تا-نِل"],["Skin turgor","مرونة الجلد","سكِن تَر-جر"],["Lethargy","خمول شديد","لِث-ر-جي"],["Apathy","لامبالاة","أ-ثي"],["Pyrogenic","مسبب للحمى","بايرو-جِن-ك"],["Sterile","معقّم","ستي-رِل"],["Sediment","رواسب","سِد-ي-مِنت"],["Circumference","محيط","سر-كَم-فر-نس"],["Recumbent","مستلقٍ","ري-كَم-بنت"],["Supine","مستلقٍ على الظهر","سو-باين"],["Stature","القامة","ستا-تشر"],["Vertex","قمة الراس","في-ر-تكس"],["Occipital","مؤخرة الراس","أوك-سيب-ي-تل"],["Pinna","صوان الأذن","بِن-ا"],["Acromion","طرف الكتف","أ-كرُو-مي-ون"],["Olecranon","طرف الكوع","أو-ليك-را-نون"]];
+var tabs=document.getElementById("tabs"),m=document.getElementById("m");
+function esc(s){return String(s).replace(/&/g,"&amp;").replace(/</g,"&lt;")}
+function show(k){
+Array.prototype.forEach.call(tabs.children,function(b){b.setAttribute("aria-selected",b.dataset.k===k)});
+var h="";
+if(k==="gl"){
+h='<input id="q" type="search" placeholder="Search | ابحث" aria-label="Search words"><div class="gl" id="gl"></div>';m.innerHTML=h;
+var draw=function(f){var r='<div class="g gh"><span>Word</span><span>المعنى</span><span>النطق</span></div>';
+W.forEach(function(w){if(!f||(w.join(" ").toLowerCase().indexOf(f)>-1))r+='<div class="g"><b>'+esc(w[0])+'</b><span>'+esc(w[1])+'</span><span class="p">'+esc(w[2])+'</span></div>'});
+document.getElementById("gl").innerHTML=r};
+draw("");document.getElementById("q").oninput=function(e){draw(e.target.value.trim().toLowerCase())};
+return}
+if(k==="growth")h='<div class="note">★ marks a critical step: missing it costs the most marks. ★ معناها خطوة حرجة.</div>';
+D[k].forEach(function(s){
+h+='<section class="card"><h2><span>'+esc(s[0])+'</span><span dir="rtl">'+esc(s[1])+'</span></h2><ol>';
+s[2].forEach(function(x){h+='<li'+(x[2]?' class="c"':'')+'><span class="e">'+esc(x[0])+'</span><span class="a">'+esc(x[1])+'</span></li>'});
+h+='</ol></section>'});
+m.innerHTML=h;window.scrollTo(0,0)}
+T.forEach(function(t){var b=document.createElement("button");b.textContent=t[1];b.dataset.k=t[0];b.setAttribute("role","tab");b.onclick=function(){show(t[0])};tabs.appendChild(b)});
+show("growth");
+</script>
+</body>
+</html>
